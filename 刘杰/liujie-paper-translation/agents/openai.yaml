@@ -1,0 +1,4 @@
+interface:
+  display_name: "刘杰-论文翻译.skill"
+  short_description: "忠实翻译英文论文，保留段落论证、图表公式并逐页检查中文 Word 排版"
+  default_prompt: "请用 $liujie-paper-translation 将这篇论文完整翻译为中文 Word，保留段落逻辑、图表公式和限定条件，完成全文覆盖、数值与逐页排版检查。"

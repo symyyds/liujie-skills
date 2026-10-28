@@ -1,0 +1,4 @@
+interface:
+  display_name: "刘杰-段落润色.skill"
+  short_description: "遵循导师的主体先行与证据论证逻辑，精修英文论文六大部分"
+  default_prompt: "请使用 $liujie-paragraph-polishing 按导师的英文行文逻辑修改这篇论文，保留章节结构和事实，重点检查摘要、引言、动机、贡献、结论与正文。"

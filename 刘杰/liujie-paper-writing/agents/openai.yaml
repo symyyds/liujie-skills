@@ -1,0 +1,4 @@
+interface:
+  display_name: "刘杰-论文写作.skill"
+  short_description: "从文献图库、实验设计与执行，到基线对比、论文成稿和真实性审计"
+  default_prompt: "使用 $liujie-paper-writing，根据我的课题、设备与目标期刊开展论文研究；每阶段开始和结束时报告并等待我的明确确认。"

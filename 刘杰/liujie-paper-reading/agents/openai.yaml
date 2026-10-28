@@ -1,0 +1,4 @@
+interface:
+  display_name: "刘杰-论文检索与精读笔记.skill"
+  short_description: "检索下载论文，按原 Word 模板整理完整摘要翻译、方法图解、实验分析与科研启发"
+  default_prompt: "使用 $liujie-paper-reading，按我的研究方向找论文、下载全文，并依照保留的 Word 模板整理精读笔记。"

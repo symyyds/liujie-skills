@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "project": {"title": "", "kind": "empirical", "target_venue": "", "submission_cycle": ""},
+  "scope": {
+    "deliverable": "full_paper",
+    "approval_quote": "",
+    "selected_phases": ["S0", "S1", "S2", "S3", "S4", "S5", "S6", "S7"],
+    "skip_reasons": [],
+    "required_roles": ["scope", "corpus_inventory", "figure_gallery", "experiment_plan", "data_audit", "experiment_results", "baseline_table", "baseline_source_data", "manuscript_source", "manuscript_pdf", "integrity_report", "delivery_index", "reproduction_instructions"],
+    "required_experiment_ids": [],
+    "required_metric_ids": [],
+    "diagram_mode": "prompts_and_placeholders",
+    "accepted_placeholders": []
+  },
+  "phase_state": {"current": "S0", "status": "awaiting_start", "history": []},
+  "papers": [],
+  "datasets": [],
+  "experiments": [],
+  "runs": [],
+  "metrics": [],
+  "baseline_values": [],
+  "claims": [],
+  "artifacts": [],
+  "baseline_table": {"artifact_id": "", "source_data_artifact_id": "", "manuscript_locator": "", "verified_in_manuscript": false},
+  "issues": []
+}

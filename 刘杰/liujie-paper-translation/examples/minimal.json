@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "title_zh": "固定预算下的模型误差比较",
+  "title_en": "Comparing Model Errors Under a Fixed Budget",
+  "front_matter_source_ids": {"title_zh": ["s-title"], "title_en": ["s-title"]},
+  "terms": [{"en": "held-out set", "zh": "留出集", "note": "不用于训练"}],
+  "sources": [
+    {"id": "s-title", "kind": "title", "text": "Comparing Model Errors Under a Fixed Budget", "page": 1},
+    {"id": "s-abstract", "kind": "heading", "text": "Abstract", "page": 1},
+    {"id": "s-p1", "kind": "paragraph", "text": "Under a fixed budget, the error fell from 12% to 9% on the held-out set. This suggests improved performance in this setting, but does not establish a universal advantage.", "page": 1},
+    {"id": "s-h1", "kind": "heading", "text": "1 Results", "page": 1},
+    {"id": "s-p2", "kind": "paragraph", "text": "The comparison used the same evaluation procedure. Therefore, the result concerns this budget and dataset rather than all deployment conditions.", "page": 1},
+    {"id": "s-table1", "kind": "table", "text": "Table 1 Error on the held-out set", "headers": ["Method", "Error"], "rows": [["Baseline", "12%"], ["Variant", "9%"]], "page": 1},
+    {"id": "s-note", "kind": "note", "text": "The numerical values in this example are invented for a layout demonstration.", "page": 1}
+  ],
+  "omissions": [],
+  "blocks": [
+    {"id": "b-abstract", "kind": "heading", "source_ids": ["s-abstract"], "level": 1, "zh": "摘要"},
+    {"id": "b-p1", "kind": "paragraph", "source_ids": ["s-p1"], "zh": "在固定预算下，留出集上的误差从 12% 降至 9%。这提示该设置下的表现有所改善，但并未确立普遍优势。"},
+    {"id": "b-h1", "kind": "heading", "source_ids": ["s-h1"], "level": 1, "number": "1", "zh": "结果"},
+    {"id": "b-p2", "kind": "paragraph", "source_ids": ["s-p2"], "zh": "比较采用了相同的评估流程。因此，这一结果只涉及该预算和数据集，并不涵盖所有部署条件。"},
+    {"id": "b-table1", "kind": "table", "source_ids": ["s-table1"], "number": "1", "zh": "留出集上的误差", "headers": ["方法", "误差"], "rows": [["基线", "12%"], ["变体", "9%"]], "column_widths_inches": [4.2, 2.7]},
+    {"id": "b-note", "kind": "note", "source_ids": ["s-note"], "zh": "本例数值为版式演示而编写。"}
+  ]
+}
