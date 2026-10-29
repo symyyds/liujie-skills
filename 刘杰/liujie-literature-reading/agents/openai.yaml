@@ -1,0 +1,5 @@
+interface:
+  display_name: "刘杰-文献精读.skill"
+  short_description: "针对指定论文精读，解读原图公式、核对证据边界并规划后续研究"
+  brand_color: "#28664F"
+  default_prompt: "Use $liujie-literature-reading to read this paper closely, show its original figures and tables beside their explanations, distinguish facts from inferences, and organize the analysis under prominent section headings."

@@ -9,3 +9,6 @@ Thumbs.db
 ~$*
 work/
 *.log
+
+# Required bundled bytecode supplied by the imported reader.
+!刘杰/liujie-literature-reading/bin/**/*.pyc

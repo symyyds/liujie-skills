@@ -1,11 +1,12 @@
 # 刘杰科研 Skills
 
-面向 Codex 的中文科研工作流技能集：论文检索与精读、论文全文翻译、实验研究与论文写作、英文段落精修。
+面向 Codex 的中文科研工作流技能集：指定论文精读、论文检索与 Word 笔记、论文全文翻译、实验研究与论文写作、英文段落精修。
 
 ## 技能一览
 
 | 展示名 | 调用名称 | 主要用途 |
 |---|---|---|
+| 刘杰-文献精读.skill | `$liujie-literature-reading` | 指定论文的速读、深度精读、原图公式解读、证据分析与研究规划；整合自 N同学的 Norman Paper Reading |
 | 刘杰-论文检索与精读笔记.skill | `$liujie-paper-reading` | 检索、下载、原图解读与六章中文 Word 精读笔记 |
 | 刘杰-论文翻译.skill | `$liujie-paper-translation` | 全文忠实翻译成可编辑中文 Word，核对覆盖、数字与排版 |
 | 刘杰-论文写作.skill | `$liujie-paper-writing` | 从文献、实验设计和执行，到 baseline 对比、LaTeX 成稿与审计 |
@@ -23,6 +24,7 @@
 
    ```text
    ~/.codex/skills/刘杰/
+   ├── liujie-literature-reading/SKILL.md
    ├── liujie-paper-reading/SKILL.md
    ├── liujie-paper-translation/SKILL.md
    ├── liujie-paper-writing/SKILL.md
@@ -36,6 +38,17 @@
 单项分发包位于 [`packages/刘杰/`](packages/刘杰/)。`.skill` 是包含完整技能目录的 ZIP 格式压缩包；也可以用解压工具解开后安装其中的文件夹。
 
 ## 使用示例
+
+### 指定论文的文献精读
+
+```text
+使用 $liujie-literature-reading 精读这篇论文：[PDF / DOI / arXiv / 论文正文]。
+解释研究问题、关键设计、原图表和必要公式，区分事实与推断，并给出有依据的研究启示和下一步计划。
+```
+
+支持 quick、deep、extend、focused 四种模式，默认 Markdown，可按需生成离线 HTML、引导阅读、中英对照或论文比较。原作者 **N同学**，上游为 [Norman Paper Reading](https://github.com/N-tongxue/norman-skill/tree/171b8a319378a7394f65ea3b36bd4fd55b644c2d/norman-paper-reading)，固定版本 `1.4.0` / 提交 `171b8a319378a7394f65ea3b36bd4fd55b644c2d`。保留原作者署名和上游双语结尾水印；原引擎及第三方许可证随包保留。
+
+本技能用于已指定论文的深入理解；主题检索、批量下载和六章 Word 笔记使用下方的 `liujie-paper-reading`。文献精读包约 98 MB，完整目录约 185 MB，含 Windows x64、macOS Apple Silicon 和 macOS Intel 运行组件。运行时完整性已按上游哈希核对，本仓库未重新执行各平台原生引擎测试。
 
 ### 找论文与精读
 
@@ -67,7 +80,7 @@
 
 ## 运行环境
 
-- 技能指令本身可直接安装；执行辅助脚本需要 Python 3.10+。
+- 技能指令本身可直接安装。文献精读技能自带 Windows/Mac 运行组件；其余技能执行 Python 辅助脚本需要 Python 3.10+。
 - 文档脚本的基础依赖列在 [`requirements.txt`](requirements.txt)。优先使用当前环境提供的 Python 和依赖；需要手动安装时可在独立虚拟环境中执行 `python -m pip install -r requirements.txt`。
 - Word/PDF 渲染需要当前环境提供的 Documents/PDF 工具，或脚本支持的渲染器。安装依赖本身不代表已经完成视觉核查。
 - 文献检索需要可用的网络或检索工具；图表、文献表与文档任务可配合环境中的 PDF、Spreadsheets、Documents 技能。
@@ -82,14 +95,15 @@
 ## 仓库结构
 
 ```text
-刘杰/                  四个技能的可编辑源文件与资源
+刘杰/                  五个技能的指令、资源与随附运行组件
 packages/刘杰/         可单独分发的 .skill 压缩包
 requirements.txt       Python 辅助脚本基础依赖
-LICENSE                MIT License
+LICENSE                本仓库自有内容的 MIT License
+THIRD_PARTY_NOTICES.md  文献精读上游来源与许可范围
 ```
 
 后续新增技能继续使用 `刘杰-xxx.skill` 展示名，在 `刘杰/` 下增加对应的小写连字符目录。
 
 ## 许可证
 
-本仓库采用 [MIT License](LICENSE)。使用者自行提供的论文、数据和图片遵循其各自的许可与访问条件。
+本仓库自有内容采用 [MIT License](LICENSE)。导入的 `刘杰/liujie-literature-reading/` 及其 `.skill` 包保留上游和第三方许可范围，详见 [第三方来源与许可说明](THIRD_PARTY_NOTICES.md)，根目录 MIT 不覆盖这些第三方内容。使用者自行提供的论文、数据和图片遵循其各自的许可与访问条件。

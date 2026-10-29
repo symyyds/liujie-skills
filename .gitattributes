@@ -5,3 +5,6 @@
 *.json text eol=lf
 *.skill binary
 *.docx binary
+
+# Preserve every imported byte for its shipped checksum manifests.
+刘杰/liujie-literature-reading/** -text

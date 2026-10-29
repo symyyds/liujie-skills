@@ -1,0 +1,18 @@
+{
+  "display_name": "刘杰-文献精读.skill",
+  "local_id": "liujie-literature-reading",
+  "upstream_skill": "norman-paper-reading",
+  "upstream_author": "N同学",
+  "upstream_version": "1.4.0",
+  "upstream_commit": "171b8a319378a7394f65ea3b36bd4fd55b644c2d",
+  "upstream_url": "https://github.com/N-tongxue/norman-skill/tree/171b8a319378a7394f65ea3b36bd4fd55b644c2d/norman-paper-reading",
+  "upstream_files": 254,
+  "modified_upstream_files": [
+    "README.md",
+    "SKILL.md",
+    "agents/openai.yaml",
+    "references/figure-and-equation-reading.md"
+  ],
+  "runtime_files_unchanged": true,
+  "native_engine_executed_during_installation": false
+}
